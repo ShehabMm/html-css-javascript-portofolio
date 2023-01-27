@@ -1,16 +1,13 @@
 const burgerMenu = document.querySelector(".burger-menu");
 const blackScreen= document.querySelector(".black-screen")
 const close = document.querySelector(".close");
-
+const nav  = document.querySelector(".nav");
 
 burgerMenu.addEventListener("click", (eo) => {
 
   burgerMenu.style.display="none"
   blackScreen.style.display="block";
   close.style.display="block";
-  close.style.transform="rotate(450deg)" ;
-  eo.target.style.transition = "all 2s ease";
-  
 
 })
 

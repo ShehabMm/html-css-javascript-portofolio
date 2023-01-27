@@ -5,6 +5,7 @@
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
+  list-style: none;
 }
 
 
@@ -165,8 +166,7 @@ footer h1 {
 @media (max-width:880px) {
 
   nav ul li a {
-
-    display: none;
+    display: none
   }
 
   nav ul li .burger-menu {
@@ -174,7 +174,11 @@ footer h1 {
     display: block;
   }
 
+
+
 }
+
+
 
 
 
@@ -274,14 +278,14 @@ p {
 
 }
 
-.black-screen span{
+.black-screen span {
 
-font-size: 60px;
-position:absolute;
-right:40px;
-display:none;
-cursor: pointer;
-transition: all 0.8s ease;
+  font-size: 60px;
+  position: absolute;
+  right: 40px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.8s ease;
 
 
 }
