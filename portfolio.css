@@ -274,3 +274,14 @@ p {
 
 }
 
+.black-screen span{
+
+font-size: 60px;
+position:absolute;
+right:40px;
+display:none;
+cursor: pointer;
+transition: all 0.8s ease;
+
+
+}
