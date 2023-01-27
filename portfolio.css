@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
@@ -13,6 +13,7 @@ body {
   background-color: #0a192f;
 
 }
+
 
 header {
   width: 90vw;
@@ -117,7 +118,7 @@ main b {
 }
 
 
- .about-me {
+.about-me {
 
   width: 70%;
   height: 50vh;
@@ -143,13 +144,19 @@ main b {
 
 
   width: 60vw;
-} 
+}
 
 footer {
-  border: 2px solid red;
   height: 300vh;
   color: #ccd6fb;
   text-align: center;
+}
+
+footer h1 {
+
+  background-color: #73928b;
+  border: 1px solid #73928b;
+  border-radius: 5px;
 }
 
 
@@ -164,7 +171,7 @@ footer {
 
   nav ul li .burger-menu {
 
-    display:block;
+    display: block;
   }
 
 }
@@ -175,11 +182,11 @@ footer {
 
 
 
-section.ok{
+section.ok {
   background-color: #555;
 }
 
-p{
+p {
   color: white;
   font-family: arial;
   display: table-cell;
@@ -212,19 +219,20 @@ p{
 }
 
 .scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
 }
 
 @keyframes bounce {
+
   0%,
   100%,
   20%,
@@ -234,14 +242,35 @@ p{
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
+
   60% {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
 }
+
+.black-screen {
+  background-color: #0a192f;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  opacity: 0.5;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: none;
+
+}
+
