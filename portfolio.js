@@ -31,5 +31,21 @@ close.addEventListener("click", (eo) => {
 
 
 
-// carousel
+// contact me
+function validateForm() {
+  // Get the values from the form
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+ 
+  // Validate the values
+  if (name == '' || email == '' || message == '') {
+    alert('Please fill out all fields.');
+    return false;
+  }
+ 
+  // Submit the form
+  return true;
+}
+
 
