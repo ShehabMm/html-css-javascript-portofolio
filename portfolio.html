@@ -10,12 +10,20 @@
     content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shehab's Portfolio</title>
+  <link rel="stylesheet" href="/bootstrap.min.css.css">
+
   <link rel="stylesheet" href="portfolio.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script defer src="portfolio.js"></script>
+  <script src="/bootstrap.min.js.js"></script>
 </head>
 
 <body>
+
+
+
+  AOS.init():
   <div class="black-screen">
     <span class="close">&#10006;</span>
 
@@ -50,7 +58,7 @@
 
 
   <main>
-    <div class="main">
+    <div class="main" data-aos="fade-right" data-aos-duration="1000">
 
       <h6>Hi, my name is</h6>
       <h1 class="name">Shehab Eldin</h1>
@@ -73,7 +81,7 @@
 
   <div class="about-me" id="about-me">
 
-    <video controls src="/promo.mp4">vid</video>
+    <video controls src="/promo.mp4" data-aos="fade-left" data-aos-duration="1000">vid</video>
 
     <h2>Who am I?<small class="small"> ــــــــــــــــــــــــــ</small></h2>
     <br>
@@ -88,17 +96,90 @@
 
   </div>
   <br>
-
+  <br><br><br>
   <footer>
 
+    <h1>My Projects</h1>
 
     <div class="my projects" id="my">
-      <h1>My Projects</h1>
+
+
+      <div class="carousel">
+
+
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/imgonline-com-ua-resize-j79nzMgdFfd.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/ecommerce (1).png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/bridge-g8e80d1dcc_1920.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+      </div>
+
+
 
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script> AOS.init(); </script>
+
 </body>
 
 </html>
