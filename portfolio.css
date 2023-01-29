@@ -5,9 +5,9 @@
   text-decoration: none !important;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
-scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 
- list-style: none;
+  list-style: none;
 }
 
 
@@ -74,21 +74,22 @@ nav ul li a {
   padding: 5px 20px;
   border-color: rgba(0, 255, 255, 0.595);
   box-shadow: 0 0 3px rgba(0, 255, 255, 0.595);
-position:relative;
+  position: relative;
 }
 
-nav ul li a::after{
-content: "";
-width:0;
-background:#ebe9e9;
-height: 3px;
-position:absolute;
-left:0;
-bottom: -6px;
-transition: all 0.5s ease;
+nav ul li a::after {
+  content: "";
+  width: 0;
+  background: #ebe9e9;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s ease;
 
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
 
   width: 100%;
 }
@@ -460,47 +461,48 @@ textarea {
 
 
 
-.collectionOfWork{
+.collectionOfWork {
 
-display: grid;
-grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-grid-gap:40px;
+  grid-gap: 40px;
 
-margin-top: 50px;
-margin-left: 20%;
-margin-right: 20%;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+    
 
-
-
-}
-
-.collectionOfWork .div{
-
-border-radius: 15px;
-position:relative;
-overflow: hidden;
-transition: all 0.5s ease;
-width: 100%;
 
 }
 
-.collectionOfWork .div img{
+.collectionOfWork .div {
 
-width:100%;
-border-radius: 15px;
-display:block;
-cursor: pointer;
-height: 35vh;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease !important;
+  width: 100%;
 
 }
 
-.collectionOfWork .div:hover{
+.collectionOfWork .div img {
 
-  transform:translateY(-10px)
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  cursor: pointer;
+  height: 35vh;
+
 }
 
-.inner{
-text-align: left;
+.collectionOfWork .div:hover {
 
+  transform:translateY(-20px);
+  background-color: #64ffdb43;
+}
+
+.inner {
+  text-align: left;
+  text-transform: capitalize;
 }
