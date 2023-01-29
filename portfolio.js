@@ -5,6 +5,15 @@
 // const change = document.querySelector(".change")
 // const parent = document.querySelector(".parent")
 const sidemenu = document.getElementById("sidemenu");
+const ecommerce = document.getElementById("ecommerce");
+const url = 'https://magical-mousse-e0a3f8.netlify.app/';
+const url2= 'https://legendary-hotteok-86e2d4.netlify.app/';
+const bridge =document.getElementById("bridge");
+const url3 ='https://comfy-puffpuff-8aa42c.netlify.app/';
+const comfy= document.getElementById("comfy");
+const url4 = 'https://tubular-genie-8003f4.netlify.app/';
+const todo = document.getElementById("todo")
+
 
 function openmenu (){
 
@@ -22,6 +31,32 @@ function closemenu (){
 
 }
 
+ecommerce.addEventListener("click", () => {
+
+  window.open(url, '_blank');  
+})
+
+bridge.addEventListener("click", () => {
+
+  window.open(url2, '_blank');  
+
+  
+})
+
+
+comfy.addEventListener("click", () => {
+
+  window.open(url3, '_blank');  
+
+  
+})
+
+todo.addEventListener("click", () => {
+
+  window.open(url4, '_blank');  
+
+  
+})
 
 
 
