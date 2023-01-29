@@ -34,20 +34,97 @@ header h2 {
   border-right: transparent;
   border-top: transparent;
   cursor: pointer;
+
+margin-top:-30px;
 }
+
+.containernav {
+
+  padding: 20px;
+
+}
+
+.front {
+  width: 50vw;
+  height: 5vh;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.front ul {
+
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  position: absolute;
+
+}
+
+
+.front ul li a {
+  font-size: 1.2em;
+  color: #ccd6f6 !important;
+  margin-left: 40px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #64ffda;
+  border-radius: 15px;
+  padding: 5px 20px;
+  border-color: rgba(0, 255, 255, 0.595);
+  box-shadow: 0 0 3px rgba(0, 255, 255, 0.595);
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+
+
+}
+
+
+.front ul li a::after {
+  content: "";
+  width: 0;
+  background: #ebe9e9;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s ease;
+
+}
+
+.sms:hover::after {
+
+  width: 100%;
+}
+
+
+.front ul li a:hover {
+  color: rgba(0, 255, 255, 0.786);
+}
+
+.front ul li a:active {
+  color: red;
+}
+
+
+
+
 
 nav {
 
   display: flex;
   position: absolute;
-  right: 0;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
   margin-right: 80px;
   font-family: 'Oswald', sans-serif;
   max-width: 70vw;
-  text-align: right;
+  text-align: center;
 
 }
 
@@ -59,6 +136,29 @@ nav img {
   top: -7px;
   right: -18px;
   display: none;
+
+}
+
+nav ul {
+  background-image: linear-gradient(to right top, #745567, #6b4e67, #604867, #534367, #423f67, #36456f, #254c75, #045279, #006483, #00758a, #24868e, #439690);
+  position: fixed;
+  top: 0;
+  right: -400px;
+  height: 100vh;
+  width: 400px;
+  padding-top: 150px;
+  transition: right 0.5s ease;
+  z-index: 5;
+
+}
+
+nav ul li {
+
+  display: block;
+  margin: 5px;
+  margin-top: 100px;
+
+
 
 }
 
@@ -102,6 +202,19 @@ nav ul li a:hover {
 nav ul li a:active {
   color: red;
 }
+
+nav ul .close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 500px;
+
+}
+
+
+/* the main section */
 
 main {
 
@@ -192,7 +305,7 @@ main h5 {
 }
 
 footer {
-  height: 200vh;
+  height: 150vh;
   color: #ccd6fb;
   text-align: center;
 }
@@ -324,24 +437,7 @@ p {
 
 }
 
-.black-screen span {
 
-  font-size: 40px;
-  position: absolute;
-  right: 50px;
-  top: 23px;
-  cursor: pointer;
-  color: #64ffda;
-  display: none;
-  width: 50px;
-
-}
-
-.black-screen span:hover {
-
-  cursor: pointer;
-
-}
 
 
 
@@ -477,6 +573,10 @@ textarea {
 
 .nav .burger-menu {
   display: none;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 30px;
 
 }
 
@@ -484,7 +584,6 @@ textarea {
 .my-skills {
   margin-top: 200px;
   text-align: center;
-  height: 60vh;
   margin-right: 20%;
   margin-left: 20%;
   /* From https://css.glass */
@@ -494,6 +593,10 @@ textarea {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(51, 128, 138, 0.3);
+  overflow: hidden;
+  min-height: 100px;
+
+
 
 }
 
@@ -507,40 +610,43 @@ textarea {
   line-height: 2em;
   font-size: 2em;
   text-align: left;
-padding-top: 20px;
-  text-indent:40px ;
+  padding-top: 20px;
+  text-indent: 40px;
 }
 
-.final span{
+.final span {
 
-  color:red;
+  color: red;
   font-size: 50px;
-  
+  display: inline-block;
+
 
 }
 
-.design{
 
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #555;
-height: 10vh;
-margin-top: 100px;
-font-size: 2em;
-border-top:5px solid rgb(255, 255, 255);
-border-radius: 20px;
-margin-right:10% ;
-margin-left: 10%;
-overflow: hidden;
+
+
+
+.design {
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  height: 10vh;
+  margin-top: 100px;
+  font-size: 2em;
+  border-top: 5px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  overflow: hidden;
 }
 
 
 
 /* css for small .black-screen */
-
-
-
 @media (max-width:900px) {
   .collectionOfWork {
     display: grid;
@@ -550,6 +656,7 @@ overflow: hidden;
 
   }
 
+
   .collectionOfWork .div {
 
     width: 60vw;
@@ -558,45 +665,24 @@ overflow: hidden;
   }
 
 
-}
-
-
-
-
-
-
-@media (max-width:880px) {
-
-  .parent {
-    display: none;
-  }
-
-  nav img {
-
-    display: block;
-  }
-
-  nav ul li {
-
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+  .front{
+display:none;
 
   }
 
-  nav ul li a {
-
-    margin-top: 50px;
-    text-align: center;
-  }
-
-  nav .burger-menu {
-    display: block !important;
+  .burger-menu{
+display:block !important;
 
   }
 
 
 }
+
+
+
+
+
+
 
 @media (max-width:1200px) {
 
@@ -610,11 +696,41 @@ overflow: hidden;
 
 }
 
-@media (min-width:880) {
 
 
-  nav img {
-    display: none !important;
+@media (max-width:1000px) {
+
+  .my-skills {
+
+    font-size: 0.5em;
 
   }
+
+  .final span {
+    font-size: 3em;
+
+
+  }
+
+
+}
+
+
+@media (max-width:400px) {
+
+
+  .design p {
+
+    font-size: 0.5em;
+
+  }
+
+
+
+  .final span {
+    font-size: 2em;
+
+
+  }
+
 }

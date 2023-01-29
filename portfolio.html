@@ -17,38 +17,53 @@
 </head>
 
 <body>
-
-
-
-  <div class="black-screen" data-aos="fade-right"">
->
-    <span class=" close">&#10006;</span>
-
-
   </div>
   <header>
-    <nav class="nav">
-      <ul>
-        <li>
+    <container class="containernav">
 
-          <div class="parent">
-            <a target="_blank" data-aos="fade" data-aos-delay="300" data-aos-easing="ease-in-sine"
-              href="https://drive.google.com/file/d/162R-U5Dlm4KraIG1Dpz6PVUZZXiQIT1_/view?usp=share_link"> Download
-              Resume</a>
-            <a href="#my" data-aos="fade" data-aos-delay="500" data-aos-easing="ease-in-sine">projects</a>
-            <a data-aos="fade" data-aos-delay="800" data-aos-easing="ease-in-sine" href="#">contact</a>
+      <div class="front">
 
-          </div>
+        <ul>
+
+          <li><a class="sms" target="_blank"
+              href="https://drive.google.com/file/d/162R-U5Dlm4KraIG1Dpz6PVUZZXiQIT1_/view?usp=share_link"
+              data-aos="fade" data-aos-delay="100" data-aos-easing="ease-in-sine">Download
+              Resume</a></li>
+          <li><a class="sms" href="#mypro"  data-aos="fade" data-aos-delay="300" data-aos-easing="ease-in-sine">Projects</a></li>
+          <li><a class="sms" href="#cont"  data-aos="fade" data-aos-delay="600" data-aos-easing="ease-in-sine">contact</a></li>
+
+        </ul>
 
 
-        </li>
+      </div>
+      <h2 data-aos="fade-down"> shehab <br>Front-end-dev</h2>
+
+    </container>
+
+
+
+
+
+
+    <nav class=" nav">
+      <ul id="sidemenu">
+        <li><a target="_blank"
+            href="https://drive.google.com/file/d/162R-U5Dlm4KraIG1Dpz6PVUZZXiQIT1_/view?usp=share_link" data-aos="fade"
+            data-aos-delay="300" data-aos-easing="ease-in-sine"> Download
+            Resume</a></li>
+        <li> <a href="#mypro" data-aos="fade" data-aos-delay="500" data-aos-easing="ease-in-sine">projects</a></li>
+        <li> <a href="#cont" data-aos="fade" data-aos-delay="800" data-aos-easing="ease-in-sine">contact</a> </li>
+
+
+
+
+        <span class="close" onclick="closemenu()">&#10006;</span>
 
       </ul>
-      <img class="burger-menu" src="/menu-bar.png" alt="">
+      <img class="burger-menu" src="/menu-bar.png" alt="" onclick="openmenu()">
 
 
     </nav>
-    <h2 data-aos="fade-down"> shehab <br>Front-end-dev</h2>
 
 
   </header>
@@ -99,7 +114,7 @@
 
 
 
-    <h1>my projects</h1>
+    <h1 data-aos="fade-up" id="mypro">my projects</h1>
 
     <div class="collectionOfWork">
 
@@ -150,12 +165,13 @@
 
     </div>
 
-    <div class="my-skills" data-aos="fade-down">
+    <div class="my-skills" data-aos="fade-down" id="cont">
 
-      <h1>my projects</h1>
+      <h1>Get In Touch</h1>
       <div class="final">
         <h2>let's cooperate</h2>
-        <p> I’m  currently willing to cooperate and looking for any new opportunities, my inbox is always open. Whether you have a
+        <p> I’m currently willing to cooperate and looking for any new opportunities, my inbox is always open. Whether
+          you have a
           question or just want to say hi. Feel free to ask me and change your dreams into reality.
 
         </p>
@@ -185,13 +201,13 @@
 
     <!-- </section> -->
 
-    <div class="design" data-aos="fade-up" >
+    <div class="design">
 
-      <p>  Designed & developed by Shehab Eldin@2023</p>
-    
+      <p> Designed & developed by Shehab Eldin@2023</p>
+
     </div>
-    
-    
+
+
 
 
   </footer>
