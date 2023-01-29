@@ -192,7 +192,7 @@ main h5 {
 }
 
 footer {
-  height: 300vh;
+  height: 200vh;
   color: #ccd6fb;
   text-align: center;
 }
@@ -202,50 +202,12 @@ footer h1 {
   background-color: #73928b;
   border: 1px solid #73928b;
   border-radius: 5px;
+  text-transform: capitalize;
 }
 
 
 
 
-@media (max-width:880px) {
-
-  .parent {
-    display: none;
-  }
-
-  nav img {
-
-    display: block;
-  }
-
-  nav ul li {
-
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-
-  }
-
-  nav ul li a {
-
-    margin-top: 50px;
-    text-align: center;
-  }
-
-
-}
-
-@media (max-width:1000px) {
-
-  main {
-
-    font-size: 1em;
-    line-height: 50px;
-
-  }
-
-
-}
 
 
 
@@ -351,7 +313,7 @@ p {
 }
 
 .black-screen {
-  background-color: #080d16;
+  background: black;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -384,7 +346,6 @@ p {
 
 
 footer h1 {
-  margin-top: 300px;
 
   width: fit-content;
   height: 3%;
@@ -407,23 +368,8 @@ footer h1 {
 
 }
 
-/* carousel */
 
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
-  text-align: center;
-}
 
-.carousel img {
-
-  cursor: pointer;
-}
 
 
 /* contact me */
@@ -451,12 +397,6 @@ textarea {
   margin-bottom: 10px;
 }
 
-.foot {
-  position: relative;
-  top: 300px;
-  border: 2px solid red;
-  margin-top: 0;
-}
 
 
 
@@ -464,27 +404,30 @@ textarea {
 .collectionOfWork {
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
 
-  grid-gap: 40px;
+  grid-gap: 80px;
 
   margin-top: 50px;
   margin-left: 20%;
   margin-right: 20%;
-    
+
 
 
 }
+
 
 .collectionOfWork .div {
 
   border-radius: 15px;
-  position: relative;
+  display: grid;
   overflow: hidden;
-  transition: all 1s ease !important;
-  width: 100%;
+  width: 30vw;
+
 
 }
+
+
 
 .collectionOfWork .div img {
 
@@ -493,16 +436,185 @@ textarea {
   display: block;
   cursor: pointer;
   height: 35vh;
+  transition: all 1s ease !important;
+
 
 }
 
+.collectionOfWork .div img:hover {
+
+  transform: translateY(-20px);
+}
+
+
 .collectionOfWork .div:hover {
 
-  transform:translateY(-20px);
   background-color: #64ffdb43;
+  transition: all 1s ease !important;
+
 }
 
 .inner {
   text-align: left;
   text-transform: capitalize;
+  line-height: 25px;
+}
+
+.div a {
+
+  color: #64ffda;
+
+
+}
+
+
+.my-skills {
+
+  margin-top: 200px;
+
+
+}
+
+.nav .burger-menu {
+  display: none;
+
+}
+
+
+.my-skills {
+  margin-top: 200px;
+  text-align: center;
+  height: 60vh;
+  margin-right: 20%;
+  margin-left: 20%;
+  /* From https://css.glass */
+  background: rgba(51, 128, 138, 0.2);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(51, 128, 138, 0.3);
+
+}
+
+.my-skills .final {
+  margin-top: 50px;
+
+}
+
+.my-skills .final p {
+
+  line-height: 2em;
+  font-size: 2em;
+  text-align: left;
+padding-top: 20px;
+  text-indent:40px ;
+}
+
+.final span{
+
+  color:red;
+  font-size: 50px;
+  
+
+}
+
+.design{
+
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #555;
+height: 10vh;
+margin-top: 100px;
+font-size: 2em;
+border-top:5px solid rgb(255, 255, 255);
+border-radius: 20px;
+margin-right:10% ;
+margin-left: 10%;
+overflow: hidden;
+}
+
+
+
+/* css for small .black-screen */
+
+
+
+@media (max-width:900px) {
+  .collectionOfWork {
+    display: grid;
+
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+
+
+  }
+
+  .collectionOfWork .div {
+
+    width: 60vw;
+
+
+  }
+
+
+}
+
+
+
+
+
+
+@media (max-width:880px) {
+
+  .parent {
+    display: none;
+  }
+
+  nav img {
+
+    display: block;
+  }
+
+  nav ul li {
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+  }
+
+  nav ul li a {
+
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  nav .burger-menu {
+    display: block !important;
+
+  }
+
+
+}
+
+@media (max-width:1200px) {
+
+  main {
+
+    font-size: 1em;
+    line-height: 50px;
+
+  }
+
+
+}
+
+@media (min-width:880) {
+
+
+  nav img {
+    display: none !important;
+
+  }
 }
