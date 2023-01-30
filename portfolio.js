@@ -6,7 +6,7 @@
 // const parent = document.querySelector(".parent")
 const sidemenu = document.getElementById("sidemenu");
 const ecommerce = document.getElementById("ecommerce");
-const url = 'https://magical-mousse-e0a3f8.netlify.app/';
+const url = 'https://chipper-semolina-f8d6dd.netlify.app/';
 const url2= 'https://legendary-hotteok-86e2d4.netlify.app/';
 const bridge =document.getElementById("bridge");
 const url3 ='https://comfy-puffpuff-8aa42c.netlify.app/';
