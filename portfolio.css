@@ -677,6 +677,25 @@ text-transform: capitalize;
   color: red;
 }
 
+.fun-facts{
+
+position:absolute;
+left:15%;
+top:40%;
+
+
+}
+
+
+.fun-facts ul li{
+font-size: 24px;
+text-align: left;
+border:2px solid red;
+line-height: 40px;
+width: fit-content;
+}
+
+
 
 .design {
 
