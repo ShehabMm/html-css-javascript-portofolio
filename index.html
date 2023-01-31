@@ -8,6 +8,7 @@
   <meta name="description" content="with me you can build your dream html and javascript website">
   <meta name="keywords" content="build website by html,css,javascript">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shehab's Portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
@@ -27,14 +28,14 @@
 
         <ul>
 
-          <li><a class="sms" target="_blank"
+          <li><a class="sms" target="_blank" aria-label="Twitter"
               href="https://drive.google.com/file/d/162R-U5Dlm4KraIG1Dpz6PVUZZXiQIT1_/view?usp=share_link"
               data-aos="fade" data-aos-delay="100" data-aos-easing="ease-in-sine">Download
               Resume</a></li>
           <li><a class="sms" href="#mypro" data-aos="fade" data-aos-delay="300"
-              data-aos-easing="ease-in-sine">Projects</a></li>
+              data-aos-easing="ease-in-sine" aria-label="Twitter">Projects</a></li>
           <li><a class="sms" href="#cont" data-aos="fade" data-aos-delay="600"
-              data-aos-easing="ease-in-sine">contact</a></li>
+              data-aos-easing="ease-in-sine" aria-label="Twitter">contact</a></li>
 
         </ul>
 
@@ -50,13 +51,13 @@
 
 
     <nav class=" nav">
-      <ul id="sidemenu">
-        <li><a target="_blank"
+      <ul id="sidemenu" role="tablist">
+        <li role="tab"><a target="_blank" 
             href="https://drive.google.com/file/d/162R-U5Dlm4KraIG1Dpz6PVUZZXiQIT1_/view?usp=share_link" data-aos="fade"
-            data-aos-delay="300" data-aos-easing="ease-in-sine"> Download
+            data-aos-delay="300" data-aos-easing="ease-in-sine" > Download
             Resume</a></li>
-        <li> <a href="#mypro" data-aos="fade" data-aos-delay="500" data-aos-easing="ease-in-sine">projects</a></li>
-        <li> <a href="#cont" data-aos="fade" data-aos-delay="800" data-aos-easing="ease-in-sine">contact</a> </li>
+        <li role="tab"> <a href="#mypro" data-aos="fade" data-aos-delay="500" data-aos-easing="ease-in-sine">projects</a></li>
+        <li role="tab"> <a href="#cont" data-aos="fade" data-aos-delay="800" data-aos-easing="ease-in-sine">contact</a> </li>
 
 
 
@@ -77,7 +78,10 @@
   <main>
     <div class="main" data-aos="fade-right" data-aos-duration="1000">
 
+    <article>
       <h6>Hi, my name is</h6>
+
+    </article>  
       <h1 class="name">Shehab Eldin.</h1>
       <h1> With good grip on HTML, CSS and JavaScript.</h1>
       <h5>I can convert Figma/PSD/xd/Sketch to HTML CSS Js and can build
@@ -92,7 +96,7 @@
 
 
   <section>
-    <a href="#about-me" class="scroll-down" address="true"></a>
+    <a href="#about-me" class="scroll-down" aria-label="Twitter" address="true"></a>
   </section>
 
 
@@ -172,29 +176,53 @@
 
     <div class="toggle">
 
-      <h1>about me</h1>
+       <h1>about me</h1>
 
-      <div class="alltabs">
+       <div class="alltabs">
 
-        <button>my skills</button>
-        <button>projects </button>
-        <button>my potential</button>
-
-
-      </div>
-
-<article class="fun-facts">
-<ul>
-  <li>project Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-  <li>project1</li>
-  <li>project1</li>
-  <li>project1</li>
+        <button class="hama">my skills</button>
+        <button class="hama">projects </button>
+        <button class="hama">my potential</button>
 
 
-</ul>
+       </div>
+
+      <article class="fun-facts  actives">
+        <ul>
+          <li>project1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 
 
-</article>
+        </ul>
+
+
+      </article>
+      <article class="fun-facts">
+        <ul>
+          <li>project2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+
+        </ul>
+
+
+      </article>
+      <article class="fun-facts">
+        <ul>
+          <li>project3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>project3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+
+        </ul>
+
+
+      </article>
 
 
     </div>

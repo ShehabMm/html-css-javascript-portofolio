@@ -7,69 +7,71 @@
 const sidemenu = document.getElementById("sidemenu");
 const ecommerce = document.getElementById("ecommerce");
 const url = 'https://chipper-semolina-f8d6dd.netlify.app/';
-const url2= 'https://legendary-hotteok-86e2d4.netlify.app/';
-const bridge =document.getElementById("bridge");
-const url3 ='https://comfy-puffpuff-8aa42c.netlify.app/';
-const comfy= document.getElementById("comfy");
+const url2 = 'https://legendary-hotteok-86e2d4.netlify.app/';
+const bridge = document.getElementById("bridge");
+const url3 = 'https://comfy-puffpuff-8aa42c.netlify.app/';
+const comfy = document.getElementById("comfy");
 const url4 = 'https://tubular-genie-8003f4.netlify.app/';
 const todo = document.getElementById("todo")
 
 
-function openmenu (){
+function openmenu() {
 
-  sidemenu.style.right="0";
+  sidemenu.style.right = "0";
 
 
 
 }
 
-function closemenu (){
+function closemenu() {
 
-  sidemenu.style.right="-400px";
-  
+  sidemenu.style.right = "-400px";
+
 
 
 }
 
 ecommerce.addEventListener("click", () => {
 
-  window.open(url, '_blank');  
+  window.open(url, '_blank');
 })
 
 bridge.addEventListener("click", () => {
 
-  window.open(url2, '_blank');  
+  window.open(url2, '_blank');
 
-  
+
 })
 
 
 comfy.addEventListener("click", () => {
 
-  window.open(url3, '_blank');  
+  window.open(url3, '_blank');
 
-  
+
 })
 
 todo.addEventListener("click", () => {
 
-  window.open(url4, '_blank');  
+  window.open(url4, '_blank');
 
-  
+
 })
 
-let i =1
+
+// autoWriting.......
+let i = 1
 const auto = document.getElementsByTagName("h6")[0]
 
 
 const autoWriting = () => {
 
-  auto.innerText = "Hi, my name is".slice(0,i);
+  auto.innerText = "Hi, my name is".slice(0, i);
   i++
 
 
 
-  if (i>"Hi, my name is".length) {
+  if (i > "Hi, my name is".length) {
 
 
     clearInterval(stop)
@@ -77,47 +79,31 @@ const autoWriting = () => {
   }
 
 
-  
+
 }
 
-const stop = setInterval(   autoWriting    , 300);
+const stop = setInterval(autoWriting, 300);
 
 
-// close.addEventListener("click", (eo) => {
- 
+// toggle buttons
 
-//   blackScreen.style.display = "none";
-//   parent.classList.remove("change");
-//   burgerMenu.style.display = "block";
+const article = document.getElementsByClassName("fun-facts")[0];
 
-// })
+const allTabs = document.querySelectorAll(".hama");
 
-// burgerMenu.addEventListener("click", (eo) => {
-
-//   burgerMenu.style.display = "none";
-//   close.style.display = "block";
-//   parent.classList.add("change");
-//   blackScreen.style.display="block";
-// })
+const parents = document.querySelector(".mom");
+const aa = document.getElementsByClassName("fun-facts")[0];
+console.log(aa);
 
 
+allTabs.forEach((item , index) => {
 
-// // contact me
-// function validateForm() {
-//   // Get the values from the form
-//   var name = document.getElementById('name').value;
-//   var email = document.getElementById('email').value;
-//   var message = document.getElementById('message').value;
- 
-//   // Validate the values
-//   if (name == '' || email == '' || message == '') {
-//     alert('Please fill out all fields.');
-//     return false;
-//   }
- 
-//   // Submit the form
-//   return true;
-// }
+  item.addEventListener("click", (eo) => {
+
+    article.parentElement.getElementsByClassName("actives")[0].classList.remove("actives")
+    article.parentElement.getElementsByClassName("fun-facts")[index].classList.add("actives");
+  })
 
 
 
+});
