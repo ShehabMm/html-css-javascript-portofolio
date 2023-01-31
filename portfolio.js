@@ -58,10 +58,29 @@ todo.addEventListener("click", () => {
   
 })
 
+let i =1
+const auto = document.getElementsByTagName("h6")[0]
+
+
+const autoWriting = () => {
+
+  auto.innerText = "Hi, my name is".slice(0,i);
+  i++
 
 
 
+  if (i>"Hi, my name is".length) {
 
+
+    clearInterval(stop)
+
+  }
+
+
+  
+}
+
+const stop = setInterval(   autoWriting    , 300);
 
 
 // close.addEventListener("click", (eo) => {
