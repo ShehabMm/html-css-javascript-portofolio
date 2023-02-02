@@ -310,6 +310,7 @@ footer h1 {
   border: 1px solid #73928b;
   border-radius: 5px;
   text-transform: capitalize;
+  font-size: 1em;
 }
 
 .change a {
@@ -461,6 +462,7 @@ textarea {
   padding: 5px;
   margin-bottom: 10px;
 }
+
 
 .collectionOfWork {
   display: grid;
@@ -797,7 +799,7 @@ textarea {
 
 .form {
   width: 60vw;
-  height: 80vh;
+  height:1000px;
   /* max-width: 820px; */
   background-color: rgb(41, 37, 37);
   border-radius: 10px;
@@ -808,6 +810,8 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  border:2px solid red;
+
 
 }
 
@@ -819,7 +823,6 @@ textarea {
   text-align: center;
   background-color: rgb(0, 0, 0);
   position: relative;
-
 }
 
 
@@ -891,7 +894,7 @@ textarea.input {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  top: 50%;
+  top: -20%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
@@ -992,6 +995,7 @@ textarea.input {
 .text {
   color: #fff;
   margin: 1.5rem 0 2rem 0;
+  text-align: left;
 }
 
 .information {
@@ -1470,14 +1474,47 @@ body {
 
 @media (max-width:600px){
 
-  .social-media {
+  .social ul  {
 
-display: none !important;
-top:0;
+display:inline-flex;
+flex-direction: row;
+top:-100px;
+position: relative;
+margin: 0;
+min-width:0 !important;
+margin-right: 100px;
 
+
+}
+
+
+.social{
+display: flex;
+width:100vw;
+}
+
+
+
+
+}
+
+@media (max-width:330px){
+  .social ul {
+
+    display:none;
   }
 
 
 
+}
+
+
+@media (max-width:250px){
+
+  .about-me{
+
+margin-bottom: 700px;
+
+  }
 
 }
